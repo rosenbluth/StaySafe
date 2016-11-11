@@ -1,0 +1,38 @@
+{
+  "name": "staysafe",
+  "version": "0.0.0",
+  "description": "A disaster readiness app",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StaySafe-Dev/StaySafe.git"
+  },
+  "author": "Tosin Awofeso <midastouchproductions@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StaySafe-Dev/StaySafe/issues"
+  },
+  "homepage": "https://github.com/StaySafe-Dev/StaySafe#readme",
+  "devDependencies": {
+    "dotenv": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "jasmine-spec-reporter": "^2.7.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs-as-promised": "^1.0.4",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "jsonwebtoken": "^7.1.9",
+    "knex": "^0.12.6",
+    "passport-jwt": "^2.2.1",
+    "path": "^0.12.7",
+    "pg": "^6.1.0",
+    "twilio": "^2.11.0"
+  }
+}
