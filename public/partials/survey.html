@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+
+  </head>
+  <body ng-controller="surveyController" ng-app="stay-safe">
+    <header>
+
+
+      <form ng-show="view.showSurveyForm" ng-submit="submitSurvey()" ng-controller="surveyController">
+      <div>
+          <p>Please enter the names and phone numbers of people you want to add into your emergency group.</p>
+          </form>
+    Telephone:
+    <input type="tel" name="usrtel">
+  </form>
+        <input type="text" ng-model="" placeholder="names">
+
+
+
+        <p>How long would you like your emergency plan to last for?</p>
+
+    <div class="form-group">
+        <label class="checkbox-inline">
+            <input type="checkbox" name="favoriteColors" ng-model=""> 2 days
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model=""> 3 days(recommended for evacuation situations)
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model=""> 4 days
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model=""> 5 days
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model=""> 6 days
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model=""> 1 week
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model="">2 weeks(recommended for home stay situation)
+        </label>
+    </div>
+
+    <p>Do you want to use your home as your check point?</p>
+    <input type="text" ng-model="" placeholder="enter location">
+
+
+    <p>Please enter the location of the place you would like to use as a checkpoint? (choose a central location)
+</p>
+        <input type="text" ng-model="" placeholder="image URL">
+        <input type="text" ng-model="" placeholder="description">
+        <input type="submit">
+
+        <p>Are you able to move out of your location?(able bodied)</p>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model=""> yes
+            <input type="checkbox" name="planLength" ng-model=""> no
+        </label>
+
+        <p>Do you have transportation that you can use? (do you have a car?)</p>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="planLength" ng-model=""> yes
+            <input type="checkbox" name="planLength" ng-model=""> no
+        </label>
+
+      </form>
+    </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script> -->
+    <script src="app.js"></script>
+  </body>
+</html>
